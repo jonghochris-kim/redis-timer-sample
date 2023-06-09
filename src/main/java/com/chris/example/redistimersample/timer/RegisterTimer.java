@@ -25,7 +25,7 @@ public class RegisterTimer {
         // delay 시간 뒤에 Redis Scheduler 가 태스크를 작동시킨다.
         rScheduledExecutorService.schedule(
             new TimerTask(message),
-            10L,
+            3L,
             TimeUnit.SECONDS
         );
     }
